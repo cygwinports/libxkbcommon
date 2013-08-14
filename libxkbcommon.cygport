@@ -1,0 +1,17 @@
+NAME="libxkbcommon"
+VERSION=0.3.1
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Keyboard description library"
+DESCRIPTION="xkbcommon is a library to handle keyboard descriptions, including
+loading them from disk, parsing them and handling their state. It's mainly
+meant for client toolkits, window systems, and other system applications."
+HOMEPAGE="http://xkbcommon.org/"
+SRC_URI="http://xkbcommon.org/download/libxkbcommon-${VERSION}.tar.xz"
+
+PKG_NAMES="libxkbcommon0 libxkbcommon-devel libxkbcommon-doc"
+libxkbcommon0_REQUIRES="xkeyboard-config"
+libxkbcommon0_CONTENTS="usr/bin/cygxkbcommon-0.dll usr/share/doc/${NAME}/[CRT]*"
+libxkbcommon_devel_CONTENTS="usr/include/ usr/lib/"
+libxkbcommon_doc_CATEGORY="Doc"
+libxkbcommon_doc_CONTENTS="usr/share/doc/${NAME}/*.*"
