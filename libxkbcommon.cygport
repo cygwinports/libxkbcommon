@@ -1,5 +1,5 @@
 NAME="libxkbcommon"
-VERSION=0.4.2
+VERSION=0.4.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Keyboard description library"
