@@ -1,5 +1,5 @@
 NAME="libxkbcommon"
-VERSION=0.4.3
+VERSION=0.6.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Keyboard description library"
@@ -15,3 +15,5 @@ libxkbcommon0_CONTENTS="--exclude=html usr/bin/cygxkbcommon*-0.dll usr/share/doc
 libxkbcommon_devel_CONTENTS="usr/include/ usr/lib/"
 libxkbcommon_doc_CATEGORY="Doc"
 libxkbcommon_doc_CONTENTS="usr/share/doc/${NAME}/html/"
+
+MAKEOPTS+=" LDFLAGS+=-no-undefined"
